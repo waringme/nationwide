@@ -1,6 +1,6 @@
 /* header and nav layout */
 header .nav-wrapper {
-  background-color: var(--background-color);
+  background-color: #004A8F;  /* Nationwide's brand blue */
   width: 100%;
   z-index: 2;
   position: fixed;
@@ -265,4 +265,8 @@ header nav .nav-sections ul > li > ul > li {
 /* tools */
 header nav .nav-tools {
   grid-area: tools;
+}
+
+.header {
+  background-color: #004A8F;  /* Nationwide's brand blue */
 }
