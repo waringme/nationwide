@@ -5,7 +5,7 @@
     "version": "1.0",
     "title": "Practice User API"
   },
-  "host": "https://author-p147324-e1509924.adobeaemcloud.com",
+  "host": "author-p147324-e1509924.adobeaemcloud.com",
   "schemes": [
     "https"
   ],
@@ -67,10 +67,40 @@
       "type": "object",
       "properties": {
         "firstName": {
-          "type": "string"
+          "type": "string",
+          "description": "User's first name"
         },
         "lastName": {
-          "type": "string"
+          "type": "string",
+          "description": "User's last name"
+        },
+        "title": {
+          "type": "string",
+          "description": "User's title (Mr, Mrs, Dr, etc.)"
+        },
+        "address1": {
+          "type": "string",
+          "description": "Primary address line"
+        },
+        "address2": {
+          "type": "string",
+          "description": "Secondary address line"
+        },
+        "city": {
+          "type": "string",
+          "description": "City name"
+        },
+        "county": {
+          "type": "string",
+          "description": "County or state name"
+        },
+        "postCode": {
+          "type": "string",
+          "description": "Postal/ZIP code"
+        },
+        "balanceAmount": {
+          "type": "string",
+          "description": "Account balance amount"
         }
       }
     }

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="invoice">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="label" type="labelDtl"/>
+                <xs:element name="details" type="invDtl"/>
+                <xs:element name="txt" type="invTxt"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:complexType name="labelDtl">
+        <xs:sequence>
+            <xs:element name="orderId" type="xs:string"/>
+            <xs:element name="prDate" type="xs:string"/>
+            <xs:element name="dlvId" type="xs:string"/>
+            <xs:element name="whOrderId" type="xs:string"/>
+            <xs:element name="matNumId" type="xs:string"/>
+            <xs:element name="qty" type="xs:string"/>
+            <xs:element name="serNum" type="xs:string"/>
+            <xs:element name="matDesc" type="xs:string"/>
+            <xs:element name="binDetails" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="invDtl">
+        <xs:sequence>
+            <xs:element name="invOutputType" type="xs:string"/>
+            <xs:element name="testSystem" type="xs:string"/>
+            <xs:element name="testSystemFull" type="xs:string"/>
+            <xs:element name="dlvTitle" type="xs:string"/>
+            <xs:element name="dlvName" type="xs:string"/>
+            <xs:element name="dlvFirstName" type="xs:string"/>
+            <xs:element name="dlvLastName" type="xs:string"/>
+            <xs:element name="dlvAddr1" type="xs:string"/>
+            <xs:element name="dlvAddr2" type="xs:string"/>
+            <xs:element name="dlvAddr3" type="xs:string"/>
+            <xs:element name="dlvPostCode" type="xs:string"/>
+            <xs:element name="dlvCountry" type="xs:string"/>
+            <xs:element name="invNum" type="xs:string"/>
+            <xs:element name="custNum" type="xs:string"/>
+            <xs:element name="custPhone" type="xs:string"/>
+            <xs:element name="custContact" type="xs:string"/>
+            <xs:element name="custEmail" type="xs:string"/>
+            <xs:element name="custIdNum" type="xs:string"/>
+            <xs:element name="custAmount" type="xs:string"/>
+            <xs:element name="suplNum" type="xs:string"/>
+            <xs:element name="suplContact" type="xs:string"/>
+            <xs:element name="suplEmail" type="xs:string"/>
+            <xs:element name="suplPhone" type="xs:string"/>
+            <xs:element name="invPosition" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="invTxt">
+        <xs:sequence>
+            <xs:element name="txtPg" type="xs:string"/>
+            <xs:element name="txtDated" type="xs:string"/>
+            <xs:element name="txtInvLang" type="xs:string"/>
+            <xs:element name="txtInvDate" type="xs:string"/>
+            <xs:element name="txtInvGenDate" type="xs:string"/>
+            <xs:element name="txtDlvAddr" type="xs:string"/>
+            <xs:element name="txtInvoice" type="xs:string"/>
+            <xs:element name="txtCustData" type="xs:string"/>
+            <xs:element name="txtCustNum" type="xs:string"/>
+            <xs:element name="txtCustPhone" type="xs:string"/>
+            <xs:element name="txtContPers" type="xs:string"/>
+            <xs:element name="txtVATIdNum" type="xs:string"/>
+            <xs:element name="txtSuplData" type="xs:string"/>
+            <xs:element name="txtSuplNum" type="xs:string"/>
+            <xs:element name="txtInvInfo1" type="xs:string"/>
+            <xs:element name="txtInvInfo2" type="xs:string"/>
+            <xs:element name="txtInvInfo3" type="xs:string"/>
+            <xs:element name="txtInvNum" type="xs:string"/>
+            <xs:element name="txtCol1" type="xs:string"/>
+            <xs:element name="txtCol2" type="xs:string"/>
+            <xs:element name="txtCol3" type="xs:string"/>
+            <xs:element name="txtCol4" type="xs:string"/>
+            <xs:element name="txtCol5" type="xs:string"/>
+            <xs:element name="txtCol6" type="xs:string"/>
+            <xs:element name="txtInvTblHdr" type="xs:string"/>
+            <xs:element name="txtInvArticles" type="xs:string"/>
+            <xs:element name="txtInvQty" type="xs:string"/>
+            <xs:element name="txtInvDelDt" type="xs:string"/>
+            <xs:element name="txtInvPricePerUnit" type="xs:string"/>
+            <xs:element name="txtInvTotalPrice" type="xs:string"/>
+            <xs:element name="txtGoods" type="xs:string"/>
+            <xs:element name="txtGoodsAmt" type="xs:string"/>
+            <xs:element name="txtNetAmt" type="xs:string"/>
+            <xs:element name="txtNetAmtNum" type="xs:string"/>
+            <xs:element name="txtVAT" type="xs:string"/>
+            <xs:element name="txtVATAmt" type="xs:string"/>
+            <xs:element name="txtTotalAmt" type="xs:string"/>
+            <xs:element name="txtTotalAmtNum" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+</xs:schema>
